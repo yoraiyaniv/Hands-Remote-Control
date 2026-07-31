@@ -79,7 +79,6 @@ python gui.py
 
 ## Roadmap / known limitations
 
-- **`webos_store.json` pairing key committed to the repo** — see the note above; low severity but worth cleaning up.
 - **Small training set**: ~33–37 samples per gesture class is enough to get a working demo but is thin for robustness across different lighting, hand sizes, or camera angles — more data collection would meaningfully improve reliability.
 - **Single-user calibration**: normalization handles scale and position, but the model was trained on one person's gesture style; a second user's swipe timing/shape might need either more diverse training data or a short recalibration step.
 - **No automated tests**: correctness has been validated by watching the live confidence bars and TV response, which is a reasonable way to tune a real-time gesture system, but not something that catches regressions automatically.
